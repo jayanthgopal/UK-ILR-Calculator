@@ -2,7 +2,7 @@ import streamlit as st
 import datetime
 import pandas as pd
 import numpy as np
-import SessionState
+
 
 def calculate_date(date, days):
   new_date = datetime.datetime.strptime(date, '%Y-%m-%d') + datetime.timedelta(days=days)
