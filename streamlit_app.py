@@ -10,7 +10,7 @@ def main():
   visa_date = st.date_input("Date of Visa")
 
   if st.button('ILR Eligibility Date'):
-    st.write('Visa Date:', visa_date)  
+    st.write('Visa Date: {}'.format(visa_date))  
     new_date = calculate_date(str(visa_date), 1799)
     st.write('ILR Eligibility from {}'.format(new_date))
 
