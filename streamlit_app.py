@@ -7,9 +7,9 @@ def calculate_date(date, days):
 
 def main():
   st.title('ILR Calculator')
-  d = st.date_input("Date of Visa")
-  st.write('Visa Date:', d)
-  new_date = calculate_date(date, 1799)
+  visa_date = st.date_input("Date of Visa")
+  st.write('Visa Date:', visa_date)
+  new_date = calculate_date(visa_date, 1799)
   st.write('ILP Eligibility from {}'.format(new_date))
 
 if __name__ == '__main__':
