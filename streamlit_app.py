@@ -7,9 +7,7 @@ import datetime
 
 def main():
   st.title('ILR Calculator')
-  st.date_input(
-      "Date of Visa",
-      datetime.date(2019, 7, 6))
+  st.date_input("Date of Visa")
   st.write('Visa Date:', d)
   # new_date = calculate_date(date, 1799)
   # st.write('The date 1799 days from {} is {}'.format(date, new_date))
